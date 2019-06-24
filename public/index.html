@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Koderzy</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Subiektywny quiz</h1>
+      <h2>Poprawne odpowiedzi: <span id="good-answers">0</span></h2>
+      <div id="game-board">
+        <div class="tips-container">
+          <button class="btn-tip" id="callToAFriend">
+            Tel. do przyjaciela
+          </button>
+          <button class="btn-tip" id="halfOnHalf">Pół na pół</button>
+          <button class="btn-tip" id="questionToTheCrowd">
+            Pytanie do publiczności
+          </button>
+        </div>
+        <div class="text-insert" id="tip"></div>
+        <div class="text-insert" id="question"></div>
+        <div class="answers-container">
+          <button class="btn-answer" id="answer1" data-answer="0"></button>
+          <button class="btn-answer" id="answer2" data-answer="1"></button>
+          <button class="btn-answer" id="answer3" data-answer="2"></button>
+          <button class="btn-answer" id="answer4" data-answer="3"></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
